@@ -3,11 +3,11 @@
 A long-only Bitcoin trend-following strategy with volatility targeting, plus the research that
 produced it. Checks once a day, holds 0–100% of the account in BTC.
 
-**Why this repo is structured the way it is.** It is easy to find a backtest that looks good on
+Why this repo is structured the way it is: It is easy to find a backtest that looks good on
 crypto and hard to know whether it means anything. So the method here is deliberately conservative:
 every configuration tried is logged (1,147 of them) and counted against a deflated-Sharpe
 correction; the final strategy and its pass/fail criteria were written down in
-[`research/PREREGISTRATION.md`](research/PREREGISTRATION.md) **before** the holdout year was ever
+[`research/PREREGISTRATION.md`](research/PREREGISTRATION.md) before the holdout year was ever
 loaded; and the whole thing is re-run on shuffled data and with delayed decisions to check that the
 edge is not a code bug or a look-ahead leak. Results that went the wrong way are kept, not deleted —
 mean reversion was my original idea and it does not work, and a machine-learning attempt was
